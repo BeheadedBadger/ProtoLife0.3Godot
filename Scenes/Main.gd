@@ -7,5 +7,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if($PlayerControls/Button.button_pressed):
+	if($UI/Button.button_pressed):
 		$MapGeneration.generate_map()

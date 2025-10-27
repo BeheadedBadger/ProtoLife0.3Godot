@@ -12,12 +12,15 @@ script = ExtResource("1_nhkr4")
 [node name="MapGeneration" parent="." instance=ExtResource("1_hpc76")]
 
 [node name="PlayerControls" parent="." instance=ExtResource("2_tr2i4")]
+position = Vector2(578, 327)
 
-[node name="Button" type="Button" parent="PlayerControls"]
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="UI"]
 z_as_relative = false
-offset_left = -547.0
-offset_top = -283.0
-offset_right = -403.0
-offset_bottom = -252.0
+offset_left = 13.0
+offset_top = 17.0
+offset_right = 157.0
+offset_bottom = 48.0
 text = "Generate Map"
 icon = SubResource("ViewportTexture_nhkr4")

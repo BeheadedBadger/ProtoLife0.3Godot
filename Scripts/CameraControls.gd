@@ -24,7 +24,6 @@ func _process(delta):
 		
 	#Move the camera
 	position += move_vector
-		
 
 func _input(event):
 	var move_vector = Vector2(0,0)
