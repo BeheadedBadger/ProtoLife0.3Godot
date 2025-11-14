@@ -2,8 +2,7 @@ extends Node2D
 
 @export var mapSize = 100
 @export var borderSize = 10
-@export var patchiness = 3
-@export var dry = 3
+@export var dryness = 3
 @export var map : FastNoiseLite 
 
 # Called when the node enters the scene tree for the first time.
@@ -53,7 +52,7 @@ func generate_map():
 			#Lower towards edge, heighten towards center
 			elevationValue += (0.5-edgeDetectionValue)
 				
-			var landValue = elevationValue - (moistureValue/dry)
+			var landValue = elevationValue - (moistureValue/dryness)
 			if landValue > 0.3:
 				landTilesLvl1.append(Vector2i(x,y))
 			if landValue > 0.4:
